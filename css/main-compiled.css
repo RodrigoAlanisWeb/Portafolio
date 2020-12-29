@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+.header {
+  box-sizing: border-box;
+  background-image: url("../img/taza-cafe-escritorio-oficina-ordenador-portatil-computadora-mesa-madera-cerca_150455-666.jpg");
+  background-size: cover;
+  background-position: 0px;
+  background-attachment: fixed;
+  height: 380px;
+}
+.header .header__menu {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #00ccff;
+  box-shadow: 0px 0px 10px #333;
+}
+.header .header__menu .header__menu-header {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.header .header__menu .header__menu-header .header__menu-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  border-radius: 99px;
+  margin-right: 10px;
+}
+.header .header__menu .header__menu-header .header__menu-name {
+  color: #555;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 30px;
+}
+.header .header__menu .header__list {
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .header__menu .header__list .header__item {
+  list-style: none;
+  height: 80px;
+  line-height: 80px;
+  padding: 0px 20px;
+  transition: all 300ms;
+}
+.header .header__menu .header__list .header__item .header__link {
+  color: #555;
+  font-family: "Open Sans";
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 300ms;
+}
+.header .header__menu .header__list .header__item:hover {
+  transform: scale(1.15, 1.15);
+}
+.header .header__menu .header__list .header__item:hover .header__link {
+  color: #444;
+}
+.header .header__container {
+  background-color: rgba(85, 85, 85, 0.6);
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
+.header .header__container .header__center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.header .header__container .header__center .header__center-icon {
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  width: 125px;
+  height: 125px;
+  border-radius: 999px;
+}
+.header .header__container .header__center .header__title {
+  font-size: 35px;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+.header .header__container .header__icon {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  opacity: 0.5;
+}
+.header .header__container .header__left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .header__container .header__left .js {
+  background-image: url("../img/js.png");
+  width: 60px;
+  height: 60px;
+  margin-top: 50px;
+}
+.header .header__container .header__left .html {
+  background-image: url("../img/html.png");
+  margin-bottom: 50px;
+}
+.header .header__container .header__left .css {
+  background-image: url("../img/css.webp");
+  margin-top: 50px;
+}
+.header .header__container .header__right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .header__container .header__right .php {
+  background-image: url("../img/php.png");
+  margin-top: 50px;
+}
+.header .header__container .header__right .node {
+  background-image: url("../img/nodejs.png");
+  border-radius: 999px;
+  margin-bottom: 50px;
+}
+.header .header__container .header__right .py {
+  background-image: url("../img/python.png");
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=main-compiled.css.map */
