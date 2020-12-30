@@ -518,14 +518,28 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
+  .header .header__container .header__center .header__title {
+    font-size: 3vw;
+  }
   .header .header__container .header__center .header__subtitle {
     margin-bottom: 0px;
+    font-size: 2vw;
+  }
+  .header .header__container .header__center .header__center-icon {
+    width: 8vw;
+    height: 8vw;
   }
   .header .header__container .header__right {
     height: 200px;
   }
   .header .header__container .header__left {
     height: 200px;
+  }
+  .header .header__menu .header__list {
+    width: 60%;
+  }
+  .header .header__menu .header__list .header__item .header__link {
+    font-size: 1.8vw;
   }
   .footer {
     height: 40px;
@@ -572,6 +586,41 @@ html {
   }
   .footer #discord {
     background-image: url("../img/discord.png");
+  }
+  .projects .projects__title {
+    font-size: 3vw;
+  }
+  .projects .projects__table th {
+    font-size: 2.5vw;
+  }
+  .projects .projects__table td {
+    font-size: 2vw;
+  }
+  .projects .projects__table td a {
+    font-size: 2vw;
+  }
+  .projects .projects__description {
+    font-size: 1.5vw;
+  }
+  .footer .footer__social .footer__title {
+    font-size: 1.5vw;
+  }
+  .about .about__title {
+    font-size: 3vw;
+  }
+  .about .about__about-me {
+    font-size: 1.8vw;
+  }
+  .tecnos .tecnos__title {
+    font-size: 3vw;
+  }
+  .tecnos .tecnos__subtitle {
+    font-size: 2.5vw;
+  }
+  .tecnos .tecnos__front .tecnos__tecno .tecnos__tecno-name,
+  .tecnos .tecnos__back .tecnos__tecno .tecnos__tecno-name,
+  .tecnos .tecnos__others .tecnos__tecno .tecnos__tecno-name {
+    font-size: 2vw;
   }
 }
 
@@ -601,6 +650,14 @@ html {
   }
   .header .header__container .header__center .header__subtitle {
     margin-bottom: 0px;
+    font-size: 3vw;
+  }
+  .header .header__container .header__center .header__center-icon {
+    width: 9vw;
+    height: 9vw;
+  }
+  .header .header__container .header__center .header__title {
+    font-size: 3.5vw;
   }
   .header .header__container .header__right {
     height: 200px;
@@ -608,20 +665,128 @@ html {
   .header .header__container .header__left {
     height: 200px;
   }
+  .projects .projects__title {
+    font-size: 3vw;
+  }
+  .projects .projects__table th {
+    font-size: 2.8vw;
+  }
+  .projects .projects__table td {
+    font-size: 2.5vw;
+  }
+  .projects .projects__table td a {
+    font-size: 2.5vw;
+  }
+  .projects .projects__description {
+    font-size: 2vw;
+  }
+  .footer .footer__social .footer__title {
+    font-size: 1.5vw;
+  }
+  .about .about__title {
+    font-size: 3.5vw;
+  }
+  .about .about__about-me {
+    font-size: 2vw;
+  }
+  .tecnos .tecnos__title {
+    font-size: 3.5vw;
+  }
+  .tecnos .tecnos__subtitle {
+    font-size: 2.8vw;
+  }
+  .tecnos .tecnos__front .tecnos__tecno .tecnos__tecno-name,
+  .tecnos .tecnos__back .tecnos__tecno .tecnos__tecno-name,
+  .tecnos .tecnos__others .tecnos__tecno .tecnos__tecno-name {
+    font-size: 2.5vw;
+  }
+  .footer .footer__social .footer__logo {
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 999px;
+    background-size: cover;
+  }
+  .footer .footer__social .footer__title {
+    font-family: 'Open Sans';
+    text-align: center;
+    font-weight: 400;
+    color: black;
+    margin-left: 10px;
+    font-size: 2vw;
+  }
+  .footer .footer__social #github {
+    background-image: url("../img/github.png");
+  }
+  .footer .footer__social #linkedin {
+    background-image: url("../img/linkedin-logo.png");
+    width: 4vw;
+    height: 4vw;
+  }
+  .footer .footer__social #discord {
+    background-image: url("../img/discord.png");
+  }
 }
 
 @media screen and (max-width: 576px) {
   .header {
-    height: 200px;
-    -ms-grid-rows: 50px 150px;
-        grid-template-rows: 50px 150px;
+    height: 250px;
+    -ms-grid-rows: 100px 150px;
+        grid-template-rows: 100px 150px;
   }
   .header .header__menu {
-    height: 50px;
+    height: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .header__menu .header__menu-header {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 60px;
+    padding-left: 0px;
+    padding-top: 5px;
+  }
+  .header .header__menu .header__menu-header .header__menu-name {
+    font-size: 3.5vw;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  .header .header__menu .header__menu-header .header__menu-logo {
+    width: 11vw;
+    height: 11vw;
   }
   .header .header__menu .header__list {
-    padding-left: 0px;
-    width: 50%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    height: 40px;
+    padding: 0px;
+    margin: 0px auto !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .header__menu .header__list .header__item {
+    padding: 0px;
+    line-height: normal;
+    text-align: center;
+    height: auto;
+  }
+  .header .header__menu .header__list .header__item .header__link {
+    font-size: 3.3vw;
+    text-align: center;
   }
   .header .header__container {
     height: 150px;
@@ -637,6 +802,14 @@ html {
   }
   .header .header__container .header__center .header__subtitle {
     margin-bottom: 0px;
+    font-size: 3.5vw;
+  }
+  .header .header__container .header__center .header__title {
+    font-size: 4.5vw;
+  }
+  .header .header__container .header__center .header__center-icon {
+    width: 15vw;
+    height: 15vw;
   }
   .header .header__container .header__right {
     height: 150px;
@@ -677,7 +850,7 @@ html {
     font-weight: 400;
     color: black;
     margin-left: 10px;
-    font-size: 1vw;
+    font-size: 3.5vw !important;
   }
   .footer #github {
     background-image: url("../img/github.png");
@@ -689,6 +862,42 @@ html {
   }
   .footer #discord {
     background-image: url("../img/discord.png");
+  }
+  .projects .projects__title {
+    font-size: 5vw;
+  }
+  .projects .projects__table th {
+    font-size: 4.5vw;
+  }
+  .projects .projects__table td {
+    font-size: 4vw;
+  }
+  .projects .projects__table td a {
+    font-size: 4vw;
+  }
+  .projects .projects__description {
+    font-size: 3.5vw;
+  }
+  .footer .footer__social .footer__title {
+    font-size: 2.5vw;
+  }
+  .about .about__title {
+    font-size: 5vw;
+  }
+  .about .about__about-me {
+    width: 100%;
+    font-size: 2.9vw;
+  }
+  .tecnos .tecnos__title {
+    font-size: 5vw;
+  }
+  .tecnos .tecnos__subtitle {
+    font-size: 4vw;
+  }
+  .tecnos .tecnos__front .tecnos__tecno .tecnos__tecno-name,
+  .tecnos .tecnos__back .tecnos__tecno .tecnos__tecno-name,
+  .tecnos .tecnos__others .tecnos__tecno .tecnos__tecno-name {
+    font-size: 3.8vw;
   }
 }
 /*# sourceMappingURL=main.css.map */

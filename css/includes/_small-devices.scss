@@ -1,12 +1,49 @@
 
 .header{
-    height: 200px;
-    grid-template-rows: 50px 150px;
+    height: 250px;
+    grid-template-rows: 100px 150px;
     .header__menu{
-        height: 50px;
-        .header__list{
+        height: 100px;
+        flex-direction: column;
+        
+        .header__menu-header{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
             padding-left: 0px;
-            width: 50%;
+            padding-top: 5px;
+            .header__menu-name{
+                font-size: 3.5vw;
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+
+            .header__menu-logo{
+                width: 11vw;
+                height: 11vw;
+            }
+        }
+        .header__list{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 80%;
+            height: 40px;
+            padding: 0px;
+            margin:0px auto !important;
+            justify-content: space-between;
+            .header__item{
+                padding: 0px;
+                line-height: normal;
+                text-align: center;
+                height: auto;
+
+                .header__link{
+                    font-size: 3.3vw;
+                    text-align: center;
+                }
+            }
         }
     }
 
@@ -18,6 +55,16 @@
             align-items: center;
             .header__subtitle{
                 margin-bottom: 0px;
+                font-size: 3.5vw;
+            }
+
+            .header__title{
+                font-size: 4.5vw;
+            }
+
+            .header__center-icon{
+                width: 15vw;
+                height: 15vw;
             }
         }
         .header__right{
@@ -56,7 +103,7 @@
         font-weight: 400;
         color: black;
         margin-left: 10px;
-        font-size: 1vw;
+        font-size: 3.5vw !important;
     }
     
     #github{
@@ -72,4 +119,63 @@
     #discord{
         background-image: url('../img/discord.png');
     }
+}
+
+.projects{
+    .projects__title{
+        font-size: 5vw;
+    }
+    .projects__table{
+        th{
+            font-size: 4.5vw;
+        }
+        td{
+            font-size: 4vw;
+            a{
+                font-size: 4vw;
+            }
+        }
+    }
+    .projects__description{
+        font-size: 3.5vw;
+    }
+}
+
+
+.footer{
+    .footer__social{
+        .footer__title{
+            font-size: 2.5vw;
+        }
+    }
+}
+
+.about{
+    .about__title{
+        font-size: 5vw;
+    }
+    .about__about-me{
+        width: 100%;
+        font-size: 2.9vw;
+    }
+}
+
+.tecnos{
+    .tecnos__title{
+        font-size: 5vw;
+    }
+    .tecnos__subtitle{
+        font-size: 4vw;
+    }
+
+    .tecnos__front,
+    .tecnos__back,
+    .tecnos__others{
+        .tecnos__tecno{
+            .tecnos__tecno-name{
+                font-size: 3.8vw;
+            }
+        }
+    }
+    
 }

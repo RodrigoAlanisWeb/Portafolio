@@ -7,8 +7,17 @@
             height: 200px;
             justify-content: center;
             align-items: center;
+            .header__title{
+                font-size: 3vw;
+            }
             .header__subtitle{
                 margin-bottom: 0px;
+                font-size: 2vw;
+            }
+
+            .header__center-icon{
+                width: 8vw;
+                height: 8vw;
             }
         }
         .header__right{
@@ -18,6 +27,18 @@
             height: 200px;
         }
     }
+
+    .header__menu{
+        .header__list{
+            width: 60%;
+            .header__item{
+                .header__link{
+                    font-size: 1.8vw ;
+                }
+            }
+        }
+    }
+    
 }
 
 .footer{
@@ -63,4 +84,62 @@
     #discord{
         background-image: url('../img/discord.png');
     }
+}
+
+.projects{
+    .projects__title{
+        font-size: 3vw;
+    }
+    .projects__table{
+        th{
+            font-size: 2.5vw;
+        }
+        td{
+            font-size: 2vw;
+            a{
+                font-size: 2vw;
+            }
+        }
+    }
+    .projects__description{
+        font-size: 1.5vw;
+    }
+}
+
+
+.footer{
+    .footer__social{
+        .footer__title{
+            font-size: 1.5vw;
+        }
+    }
+}
+
+.about{
+    .about__title{
+        font-size: 3vw;
+    }
+    .about__about-me{
+        font-size: 1.8vw;
+    }
+}
+
+.tecnos{
+    .tecnos__title{
+        font-size: 3vw;
+    }
+    .tecnos__subtitle{
+        font-size: 2.5vw;
+    }
+
+    .tecnos__front,
+    .tecnos__back,
+    .tecnos__others{
+        .tecnos__tecno{
+            .tecnos__tecno-name{
+                font-size: 2vw;
+            }
+        }
+    }
+    
 }
