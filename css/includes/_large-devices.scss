@@ -1,0 +1,66 @@
+
+.header{
+    height: 280px;
+    .header__container{
+        height: 200px;
+        .header__center{
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            .header__subtitle{
+                margin-bottom: 0px;
+            }
+        }
+        .header__right{
+            height: 200px;
+        }
+        .header__left{
+            height: 200px;
+        }
+    }
+}
+
+.footer{
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #dcdcdc;
+    background-color: rgb(238, 238, 238);
+
+    .footer__social{
+        display: flex;
+        text-decoration: none;
+        padding-top: 5px;
+        align-items: center;
+    }
+    
+    .footer__logo{
+        width: 3vw;
+        height: 3vw;
+        border-radius: 999px;
+        background-size: cover;
+    }
+
+    .footer__title{
+        font-family: 'Open Sans';
+        text-align: center;
+        font-weight: 400;
+        color: black;
+        margin-left: 10px;
+        font-size: 1vw;
+    }
+    
+    #github{
+        background-image: url('../img/github.png');
+    }
+
+    #linkedin{
+        background-image: url('../img/linkedin-logo.png');
+        width: 3.8vw;
+        height: 3.8vw;
+    }
+
+    #discord{
+        background-image: url('../img/discord.png');
+    }
+}

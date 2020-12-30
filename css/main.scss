@@ -125,8 +125,8 @@ html{
         }
 
         .header__icon{
-            width: 50px;
-            height: 50px;
+            width: 3vw;
+            height: 3vw;
             background-size: cover;
             opacity: 0.0;
         }
@@ -137,8 +137,8 @@ html{
             align-items: center;
             #js{
                 background-image: url('../img/js.png');
-                width: 60px;
-                height: 60px;
+                width: 3.2vw;
+                height: 3.2vw;
                 margin-top: 300px;
             }
             #html{
@@ -339,15 +339,18 @@ html{
         td{
             text-align: center;
             padding: 20px;
+            font-size: 1vw;
             a{
                 color: black;
                 text-decoration: none;
+                font-size: 1.3vw;
             }
         }
     }
 
     .projects__description{
         font-family: 'Open Sans';
+        font-size: 1.1vw;
     }
 }
 
@@ -368,8 +371,8 @@ html{
     }
     
     .footer__logo{
-        width: 50px;
-        height: 50px;
+        width: 3vw;
+        height: 3vw;
         border-radius: 999px;
         background-size: cover;
     }
@@ -380,16 +383,17 @@ html{
         font-weight: 400;
         color: black;
         margin-left: 10px;
+        font-size: 1vw;
     }
-
+    
     #github{
         background-image: url('../img/github.png');
     }
 
     #linkedin{
         background-image: url('../img/linkedin-logo.png');
-        width: 60px;
-        height: 60px;
+        width: 3.8vw;
+        height: 3.8vw;
     }
 
     #discord{
@@ -397,4 +401,16 @@ html{
     }
 }
 
+
+@media screen and (max-width: 992px) { 
+    @import './includes/large-devices';
+}
+
+@media screen and (max-width: 768px) {
+    @import './includes/medium-devices';
+}
+
+@media screen and (max-width: 576px) {
+    @import './includes/small-devices';
+}
 

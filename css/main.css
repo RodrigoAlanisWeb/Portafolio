@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -8,31 +9,47 @@ html {
 }
 
 .header {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-image: url("../img/taza-cafe-escritorio-oficina-ordenador-portatil-computadora-mesa-madera-cerca_150455-666.jpg");
   background-size: cover;
   background-position: 0px;
   background-attachment: fixed;
   height: 380px;
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: 80px 300px;
-  box-shadow: 0px 0px 10px #333;
+  -ms-grid-rows: 80px 300px;
+      grid-template-rows: 80px 300px;
+  -webkit-box-shadow: 0px 0px 10px #333;
+          box-shadow: 0px 0px 10px #333;
 }
+
 .header .header__menu {
   width: 100%;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 80px;
   background-color: #00ccff;
-  box-shadow: 0px 0px 10px #333;
+  -webkit-box-shadow: 0px 0px 10px #333;
+          box-shadow: 0px 0px 10px #333;
   z-index: 100000;
 }
+
 .header .header__menu .header__menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 20px;
 }
+
 .header .header__menu .header__menu-header .header__menu-logo {
   width: 3.5vw;
   height: 3.5vw;
@@ -41,51 +58,82 @@ html {
   border-radius: 99px;
   margin-right: 10px;
 }
+
 .header .header__menu .header__menu-header .header__menu-name {
   color: #555;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 300;
   font-size: 2.3vw;
 }
+
 .header .header__menu .header__list {
   width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .header .header__menu .header__list .header__item {
   list-style: none;
   height: 80px;
   line-height: 80px;
   padding: 0px 20px;
+  -webkit-transition: all 300ms;
   transition: all 300ms;
 }
+
 .header .header__menu .header__list .header__item .header__link {
   color: #555;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   text-decoration: none;
   font-size: 1.2vw;
+  -webkit-transition: all 300ms;
   transition: all 300ms;
 }
+
 .header .header__menu .header__list .header__item:hover {
-  transform: scale(1.15, 1.15);
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
 }
+
 .header .header__menu .header__list .header__item:hover .header__link {
   color: #444;
 }
+
 .header .header__container {
   background-color: rgba(85, 85, 85, 0.6);
   height: 300px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
+
 .header .header__container .header__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .header .header__container .header__center .header__center-icon {
   background-image: url("../img/logo.png");
   background-size: cover;
@@ -93,81 +141,111 @@ html {
   height: 7.5vw;
   border-radius: 999px;
 }
+
 .header .header__container .header__center .header__title {
   width: 100%;
   text-align: center;
   font-size: 2vw;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 300;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
 }
+
 .header .header__container .header__center .header__subtitle {
   display: block;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 1.5vw;
   font-weight: 300;
   margin-top: 0px;
   margin-bottom: 50px;
 }
+
 .header .header__container .header__icon {
-  width: 50px;
-  height: 50px;
+  width: 3vw;
+  height: 3vw;
   background-size: cover;
-  opacity: 0;
+  opacity: 0.0;
 }
+
 .header .header__container .header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .header .header__container .header__left #js {
   background-image: url("../img/js.png");
-  width: 60px;
-  height: 60px;
+  width: 3.2vw;
+  height: 3.2vw;
   margin-top: 300px;
 }
+
 .header .header__container .header__left #html {
   background-image: url("../img/html.png");
   margin-bottom: 300px;
 }
+
 .header .header__container .header__left #css {
   background-image: url("../img/css.webp");
   margin-top: 300px;
 }
+
 .header .header__container .header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .header .header__container .header__right #php {
   background-image: url("../img/php.png");
   margin-top: 300px;
 }
+
 .header .header__container .header__right #node {
   background-image: url("../img/nodejs.png");
   border-radius: 999px;
   margin-bottom: 300px;
 }
+
 .header .header__container .header__right #py {
   background-image: url("../img/python.png");
   margin-top: 300px;
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 30px;
 }
+
 .about .about__title {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 400;
   font-size: 2vw;
   margin-bottom: 20px;
 }
+
 .about .about__about-me {
   width: 90%;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 1.3vw;
   font-weight: 400;
   text-align: justify;
@@ -176,38 +254,53 @@ html {
 .tecnos {
   padding: 0px 30px;
 }
+
 .tecnos .tecnos__title {
   font-size: 2vw;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 400;
 }
+
 .tecnos .tecnos__subtitle {
   font-size: 1.5vw;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 400;
   text-align: center;
 }
+
 .tecnos .tecnos__front,
 .tecnos .tecnos__back,
 .tecnos .tecnos__others {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+
 .tecnos .tecnos__front .tecnos__tecno,
 .tecnos .tecnos__back .tecnos__tecno,
 .tecnos .tecnos__others .tecnos__tecno {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .tecnos .tecnos__front .tecnos__tecno .tecnos__tecno-name,
 .tecnos .tecnos__back .tecnos__tecno .tecnos__tecno-name,
 .tecnos .tecnos__others .tecnos__tecno .tecnos__tecno-name {
   font-size: 1.3vw;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 400;
 }
+
 .tecnos .tecnos__front .tecnos__tecno .tecnos__image,
 .tecnos .tecnos__back .tecnos__tecno .tecnos__image,
 .tecnos .tecnos__others .tecnos__tecno .tecnos__image {
@@ -215,76 +308,91 @@ html {
   width: 10vw;
   height: 10vw;
 }
+
 .tecnos .tecnos__front #t-js .tecnos__image,
 .tecnos .tecnos__back #t-js .tecnos__image,
 .tecnos .tecnos__others #t-js .tecnos__image {
   background-image: url("../img//js-2.png");
 }
+
 .tecnos .tecnos__front #t-html .tecnos__image,
 .tecnos .tecnos__back #t-html .tecnos__image,
 .tecnos .tecnos__others #t-html .tecnos__image {
   background-image: url("../img/html-2.svg");
 }
+
 .tecnos .tecnos__front #t-css .tecnos__image,
 .tecnos .tecnos__back #t-css .tecnos__image,
 .tecnos .tecnos__others #t-css .tecnos__image {
   background-image: url("../img/css2.png");
 }
+
 .tecnos .tecnos__front #t-angular .tecnos__image,
 .tecnos .tecnos__back #t-angular .tecnos__image,
 .tecnos .tecnos__others #t-angular .tecnos__image {
   background-image: url("../img/Angular.png");
 }
+
 .tecnos .tecnos__front #t-jquery .tecnos__image,
 .tecnos .tecnos__back #t-jquery .tecnos__image,
 .tecnos .tecnos__others #t-jquery .tecnos__image {
   background-image: url("../img/jq.png");
 }
+
 .tecnos .tecnos__front #t-gsap .tecnos__image,
 .tecnos .tecnos__back #t-gsap .tecnos__image,
 .tecnos .tecnos__others #t-gsap .tecnos__image {
   background-image: url("../img/gsap.png");
 }
+
 .tecnos .tecnos__front #t-php .tecnos__image,
 .tecnos .tecnos__back #t-php .tecnos__image,
 .tecnos .tecnos__others #t-php .tecnos__image {
   background-image: url("../img/php.png");
 }
+
 .tecnos .tecnos__front #t-laravel .tecnos__image,
 .tecnos .tecnos__back #t-laravel .tecnos__image,
 .tecnos .tecnos__others #t-laravel .tecnos__image {
   background-image: url("../img/laravel.png");
 }
+
 .tecnos .tecnos__front #t-symfoni .tecnos__image,
 .tecnos .tecnos__back #t-symfoni .tecnos__image,
 .tecnos .tecnos__others #t-symfoni .tecnos__image {
   background-image: url("../img/symfoni.png");
 }
+
 .tecnos .tecnos__front #t-node .tecnos__image,
 .tecnos .tecnos__back #t-node .tecnos__image,
 .tecnos .tecnos__others #t-node .tecnos__image {
   background-image: url("../img/node.jpg");
 }
+
 .tecnos .tecnos__front #t-mongodb .tecnos__image,
 .tecnos .tecnos__back #t-mongodb .tecnos__image,
 .tecnos .tecnos__others #t-mongodb .tecnos__image {
   background-image: url("../img/mongodb.png");
 }
+
 .tecnos .tecnos__front #t-mysql .tecnos__image,
 .tecnos .tecnos__back #t-mysql .tecnos__image,
 .tecnos .tecnos__others #t-mysql .tecnos__image {
   background-image: url("../img/mysql.png");
 }
+
 .tecnos .tecnos__front #t-py .tecnos__image,
 .tecnos .tecnos__back #t-py .tecnos__image,
 .tecnos .tecnos__others #t-py .tecnos__image {
   background-image: url("../img/python2.png");
 }
+
 .tecnos .tecnos__front #t-git .tecnos__image,
 .tecnos .tecnos__back #t-git .tecnos__image,
 .tecnos .tecnos__others #t-git .tecnos__image {
   background-image: url("../img/git.png");
 }
+
 .tecnos .tecnos__front #t-figma .tecnos__image,
 .tecnos .tecnos__back #t-figma .tecnos__image,
 .tecnos .tecnos__others #t-figma .tecnos__image {
@@ -292,77 +400,295 @@ html {
 }
 
 .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 30px;
 }
+
 .projects .projects__title {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 400;
   font-size: 2vw;
   margin-bottom: 20px;
 }
+
 .projects .projects__table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 30px;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   margin-bottom: 30px;
 }
+
 .projects .projects__table th {
   padding: 20px;
   font-size: 1.5vw;
   font-weight: 400;
   background-color: #dcdcdc;
 }
+
 .projects .projects__table td {
   text-align: center;
   padding: 20px;
+  font-size: 1vw;
 }
+
 .projects .projects__table td a {
   color: black;
   text-decoration: none;
+  font-size: 1.3vw;
 }
+
 .projects .projects__description {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
+  font-size: 1.1vw;
 }
 
 .footer {
   height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   border-top: 1px solid #dcdcdc;
   background-color: #eeeeee;
 }
+
 .footer .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-decoration: none;
   padding-top: 10px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .footer .footer__logo {
-  width: 50px;
-  height: 50px;
+  width: 3vw;
+  height: 3vw;
   border-radius: 999px;
   background-size: cover;
 }
+
 .footer .footer__title {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   text-align: center;
   font-weight: 400;
   color: black;
   margin-left: 10px;
+  font-size: 1vw;
 }
+
 .footer #github {
   background-image: url("../img/github.png");
 }
+
 .footer #linkedin {
   background-image: url("../img/linkedin-logo.png");
-  width: 60px;
-  height: 60px;
+  width: 3.8vw;
+  height: 3.8vw;
 }
+
 .footer #discord {
   background-image: url("../img/discord.png");
 }
 
-/*# sourceMappingURL=main-compiled.css.map */
+@media screen and (max-width: 992px) {
+  .header {
+    height: 280px;
+  }
+  .header .header__container {
+    height: 200px;
+  }
+  .header .header__container .header__center {
+    height: 200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .header__container .header__center .header__subtitle {
+    margin-bottom: 0px;
+  }
+  .header .header__container .header__right {
+    height: 200px;
+  }
+  .header .header__container .header__left {
+    height: 200px;
+  }
+  .footer {
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    border-top: 1px solid #dcdcdc;
+    background-color: #eeeeee;
+  }
+  .footer .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    padding-top: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer__logo {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 999px;
+    background-size: cover;
+  }
+  .footer .footer__title {
+    font-family: 'Open Sans';
+    text-align: center;
+    font-weight: 400;
+    color: black;
+    margin-left: 10px;
+    font-size: 1vw;
+  }
+  .footer #github {
+    background-image: url("../img/github.png");
+  }
+  .footer #linkedin {
+    background-image: url("../img/linkedin-logo.png");
+    width: 3.8vw;
+    height: 3.8vw;
+  }
+  .footer #discord {
+    background-image: url("../img/discord.png");
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 265px;
+    -ms-grid-rows: 65px 200px;
+        grid-template-rows: 65px 200px;
+  }
+  .header .header__menu {
+    height: 65px;
+  }
+  .header .header__menu .header__list {
+    padding-left: 0px;
+  }
+  .header .header__container {
+    height: 200px;
+  }
+  .header .header__container .header__center {
+    height: 200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .header__container .header__center .header__subtitle {
+    margin-bottom: 0px;
+  }
+  .header .header__container .header__right {
+    height: 200px;
+  }
+  .header .header__container .header__left {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    height: 200px;
+    -ms-grid-rows: 50px 150px;
+        grid-template-rows: 50px 150px;
+  }
+  .header .header__menu {
+    height: 50px;
+  }
+  .header .header__menu .header__list {
+    padding-left: 0px;
+    width: 50%;
+  }
+  .header .header__container {
+    height: 150px;
+  }
+  .header .header__container .header__center {
+    height: 150px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .header__container .header__center .header__subtitle {
+    margin-bottom: 0px;
+  }
+  .header .header__container .header__right {
+    height: 150px;
+  }
+  .header .header__container .header__left {
+    height: 150px;
+  }
+  .footer {
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    border-top: 1px solid #dcdcdc;
+    background-color: #eeeeee;
+  }
+  .footer .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    padding-top: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer__logo {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 999px;
+    background-size: cover;
+  }
+  .footer .footer__title {
+    font-family: 'Open Sans';
+    text-align: center;
+    font-weight: 400;
+    color: black;
+    margin-left: 10px;
+    font-size: 1vw;
+  }
+  .footer #github {
+    background-image: url("../img/github.png");
+  }
+  .footer #linkedin {
+    background-image: url("../img/linkedin-logo.png");
+    width: 3.8vw;
+    height: 3.8vw;
+  }
+  .footer #discord {
+    background-image: url("../img/discord.png");
+  }
+}
+/*# sourceMappingURL=main.css.map */
