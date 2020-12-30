@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 .header {
   box-sizing: border-box;
   background-image: url("../img/taza-cafe-escritorio-oficina-ordenador-portatil-computadora-mesa-madera-cerca_150455-666.jpg");
@@ -20,8 +24,8 @@
   padding-left: 20px;
 }
 .header .header__menu .header__menu-header .header__menu-logo {
-  width: 50px;
-  height: 50px;
+  width: 3.5vw;
+  height: 3.5vw;
   background-image: url("../img/logo.png");
   background-size: cover;
   border-radius: 99px;
@@ -31,7 +35,7 @@
   color: #555;
   font-family: "Open Sans";
   font-weight: 300;
-  font-size: 30px;
+  font-size: 2.3vw;
 }
 .header .header__menu .header__list {
   width: 35%;
@@ -50,7 +54,7 @@
   color: #555;
   font-family: "Open Sans";
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.2vw;
   transition: all 300ms;
 }
 .header .header__menu .header__list .header__item:hover {
@@ -67,64 +71,76 @@
 }
 .header .header__container .header__center {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .header .header__container .header__center .header__center-icon {
   background-image: url("../img/logo.png");
   background-size: cover;
-  width: 125px;
-  height: 125px;
+  width: 7.5vw;
+  height: 7.5vw;
   border-radius: 999px;
 }
 .header .header__container .header__center .header__title {
-  font-size: 35px;
+  width: 100%;
+  text-align: center;
+  font-size: 2vw;
   font-family: "Open Sans";
   font-weight: 300;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.header .header__container .header__center .header__subtitle {
+  display: block;
+  font-family: "Open Sans";
+  font-size: 1.5vw;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 .header .header__container .header__icon {
   width: 50px;
   height: 50px;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0;
 }
 .header .header__container .header__left {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.header .header__container .header__left .js {
+.header .header__container .header__left #js {
   background-image: url("../img/js.png");
   width: 60px;
   height: 60px;
-  margin-top: 50px;
+  margin-top: 300px;
 }
-.header .header__container .header__left .html {
+.header .header__container .header__left #html {
   background-image: url("../img/html.png");
-  margin-bottom: 50px;
+  margin-bottom: 300px;
 }
-.header .header__container .header__left .css {
+.header .header__container .header__left #css {
   background-image: url("../img/css.webp");
-  margin-top: 50px;
+  margin-top: 300px;
 }
 .header .header__container .header__right {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.header .header__container .header__right .php {
+.header .header__container .header__right #php {
   background-image: url("../img/php.png");
-  margin-top: 50px;
+  margin-top: 300px;
 }
-.header .header__container .header__right .node {
+.header .header__container .header__right #node {
   background-image: url("../img/nodejs.png");
   border-radius: 999px;
-  margin-bottom: 50px;
+  margin-bottom: 300px;
 }
-.header .header__container .header__right .py {
+.header .header__container .header__right #py {
   background-image: url("../img/python.png");
-  margin-top: 50px;
+  margin-top: 300px;
 }
 
 /*# sourceMappingURL=main-compiled.css.map */

@@ -12,9 +12,10 @@
 
     <!-- Librerias -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
     <!-- Scripts -->
-
+    <script src="./js/hero.js"></script>
 </head>
 <body>
     <div class="header">
@@ -33,11 +34,11 @@
         </nav>
         <div class="header__container">
             <div class="header__left">
-                <div class="header__icon js">
+                <div class="header__icon" id="js">
                 </div>
-                <div class="header__icon html">
+                <div class="header__icon" id="html">
                 </div>
-                <div class="header__icon css">
+                <div class="header__icon" id="css">
                 </div>
             </div>
             <div class="header__center">
@@ -47,18 +48,22 @@
                 <h1 class="header__title">
                     <span class="typed"></span>
                 </h1>
+                <h3 class="header__subtitle" id="dev">
+                    Desarrollador Web
+                </h3>
             </div>
             <div class="header__right">
-                <div class="header__icon php">
+                <div class="header__icon" id="php">
                 </div>
-                <div class="header__icon node">
+                <div class="header__icon" id="node">
                 </div>
-                <div class="header__icon py">
+                <div class="header__icon" id="py">
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- efecto Escritura -->
     <script src="./js/escritura.js"></script>
 
 </body>
