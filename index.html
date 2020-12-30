@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodrigo Alanis</title>
+
+    <link rel="icon" type="image/png" href="./img/logo-web.ico" />
 
     <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -16,9 +19,11 @@
 
     <!-- Scripts -->
     <script src="./js/hero.js"></script>
+    <script src="./js/repositorios.js"></script>
 </head>
+
 <body>
-    <div class="header">
+    <div class="header" id="main">
         <nav class="header__menu">
             <header class="header__menu-header">
                 <div class="header__menu-logo"></div>
@@ -27,9 +32,9 @@
                 </h2>
             </header>
             <ul class="header__list">
-                <li class="header__item"><a href="#" class="header__link">Inicio</a></li>
-                <li class="header__item"><a href="#" class="header__link">Conocimientos</a></li>
-                <li class="header__item"><a href="#" class="header__link">Proyectos</a></li>
+                <li class="header__item"><a href="#main" class="header__link">Inicio</a></li>
+                <li class="header__item"><a href="#tecnos" class="header__link">Conocimientos</a></li>
+                <li class="header__item"><a href="#projects" class="header__link">Proyectos</a></li>
             </ul>
         </nav>
         <div class="header__container">
@@ -63,8 +68,182 @@
         </div>
     </div>
 
+    <!-- Presentacion -->
+
+    <div class="about">
+        <h2 class="about__title">
+            Sobre Mi
+        </h2>
+        <p class="about__about-me" id="tecnos">
+            Hola, soy rodrigo un desarrollador web fullstack, si no sabes lo que esto significa es que soy un
+            desarrollador web con la capacidad de desarrollar cualquier tipo de pagina que puedas imaginar como tu
+            propio blog, la pagina para tu negocio, una tienda en linea, una landing page,etc.Todo esto es lo que
+            puedo hacer y estaria muy feliz de participar en tu pagina como desarrollador, yo tengo la capacidad de
+            pasar tu idea o diseño a una pagina web con las caracteristicas que desees y a un precio ajustado a los requerimientos de 
+            tu pagina.
+        </p>
+    </div>
+
+    <!-- Conocimientos -->
+
+    <div class="tecnos">
+        <h2 class="tecnos__title">
+            Conocimientos
+        </h2>
+        <h2 class="tecnos__subtitle">Frontend</h2>
+        <div class="tecnos__front">
+            <div class="tecnos__tecno" id="t-html">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    html5
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-css">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    css3
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-js">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    javascript
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-angular">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    Angular
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-jquery">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    Jquery
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-gsap">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    Gsap
+                </h3>
+            </div>
+        </div>
+        <h2 class="tecnos__subtitle">Backend</h2>
+        <div class="tecnos__back">
+            <div class="tecnos__tecno" id="t-php">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    php
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-laravel">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    Laravel
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-symfoni">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    Symfoni
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-node">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    Node js
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-mongodb">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    MongoDb
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-mysql">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    Mysql
+                </h3>
+            </div>
+        </div>
+        <h2 class="tecnos__subtitle">Otros</h2>
+        <div class="tecnos__others">
+            <div class="tecnos__tecno" id="t-py">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    Python
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-git">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    Git y Github
+                </h3>
+            </div>
+            <div class="tecnos__tecno" id="t-figma">
+                <div class="tecnos__image"></div>
+                <h3 class="tecnos__tecno-name">
+                    Figma
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Proyectos -->
+
+    <div class="projects" id="projects">
+        <h2 class="projects__title">
+            Proyectos y Repoositorios
+        </h2>
+
+        <table class="projects__table">
+            <tr>
+                <th>Fecha</th>
+                <th>Repositorio</th>
+            </tr>
+        </table>
+        <p class="projects__description">
+            Estos son los ultimos 5 repositorios que he creado da click a cada titulo para ir a el repositorio de github
+        </p>
+        <p class="projects__description">
+            Contactame por Email : rodrigoalanisweb@gmail.com
+        </p>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <a href="https://github.com/RodrigoAlanisWeb" class="footer__social">
+            <div class="footer__logo" id="github">
+
+            </div>
+            <h3 class="footer__title">
+                Mi Git Hub
+            </h3>
+        </a>
+        <a href="https://www.linkedin.com/in/rodrigo-alanis-lemus-a34861201/" class="footer__social">
+            <div class="footer__logo" id="linkedin">
+
+            </div>
+            <h3 class="footer__title">
+                Mi LinkedIn
+            </h3>
+        </a>
+        <a class="footer__social">
+            <div class="footer__logo" id="discord">
+
+            </div>
+            <h3 class="footer__title">
+                Mi Discord: Arkpex00
+            </h3>
+        </a>
+    </div>
+
     <!-- efecto Escritura -->
     <script src="./js/escritura.js"></script>
 
 </body>
+
 </html>
