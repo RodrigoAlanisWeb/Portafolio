@@ -4,6 +4,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background-image: url("../img/fondo.png");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -730,40 +734,18 @@ html {
 @media screen and (max-width: 576px) {
   .header {
     height: 250px;
-    -ms-grid-rows: 100px 150px;
-        grid-template-rows: 100px 150px;
+    -ms-grid-rows: 50px 200px;
+        grid-template-rows: 50px 200px;
   }
   .header .header__menu {
-    height: 100px;
+    height: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .header .header__menu .header__menu-header {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 60px;
-    padding-left: 0px;
-    padding-top: 5px;
-  }
-  .header .header__menu .header__menu-header .header__menu-name {
-    font-size: 3.5vw;
-    margin-top: 5px;
-    margin-bottom: 0px;
-  }
-  .header .header__menu .header__menu-header .header__menu-logo {
-    width: 11vw;
-    height: 11vw;
+    display: none;
   }
   .header .header__menu .header__list {
     display: -ms-grid;
@@ -771,7 +753,7 @@ html {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
-    height: 40px;
+    height: 50px;
     padding: 0px;
     margin: 0px auto !important;
     -webkit-box-pack: justify;
@@ -789,10 +771,10 @@ html {
     text-align: center;
   }
   .header .header__container {
-    height: 150px;
+    height: 200px;
   }
   .header .header__container .header__center {
-    height: 150px;
+    height: 200px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -812,10 +794,10 @@ html {
     height: 15vw;
   }
   .header .header__container .header__right {
-    height: 150px;
+    height: 200px;
   }
   .header .header__container .header__left {
-    height: 150px;
+    height: 200px;
   }
   .footer {
     height: 40px;
@@ -898,6 +880,26 @@ html {
   .tecnos .tecnos__back .tecnos__tecno .tecnos__tecno-name,
   .tecnos .tecnos__others .tecnos__tecno .tecnos__tecno-name {
     font-size: 3.8vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    height: 215px;
+    -ms-grid-rows: 50px 175px;
+        grid-template-rows: 50px 175px;
+  }
+  .header .header__container {
+    height: 165px;
+  }
+  .header .header__container .header__center {
+    height: 165px;
+  }
+  .header .header__container .header__right {
+    height: 165px;
+  }
+  .header .header__container .header__left {
+    height: 165px;
   }
 }
 /*# sourceMappingURL=main.css.map */

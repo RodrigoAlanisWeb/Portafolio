@@ -130,5 +130,48 @@ window.addEventListener('load', () => {
             y:-135
         });
     }
+
+    if (screen.width < 400){
+        gsap.to('#js', {
+            duration: 1,
+            opacity: 0.5,
+            y: -140
+        });
+    
+        gsap.to('#html',{
+            delay: 1,
+            duration: 1,
+            opacity: 0.5,
+            y: 130
+        });
+    
+        gsap.to('#css',{
+            delay:2,
+            duration: 1,
+            opacity: 0.5,
+            y:-140
+        });
+    
+        // Right
+        gsap.to('#py',{
+            duration: 1,
+            opacity: 0.5,
+            y: -140       
+        });
+    
+        gsap.to('#node',{
+            delay: 1,
+            duration: 1,
+            opacity: 0.5,
+            y: 130
+        });
+    
+        gsap.to('#php',{
+            delay:2,
+            duration: 1,
+            opacity: 0.5,
+            y:-140
+        });
+    }
     
 })

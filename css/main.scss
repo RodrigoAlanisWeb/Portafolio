@@ -11,6 +11,10 @@ $color_3 : rgb(70, 43, 114);
     box-sizing: border-box;
 }
 
+body{
+    background-image: url('../img/fondo.png');
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -401,16 +405,21 @@ html{
     }
 }
 
+// Responsive
 
 @media screen and (max-width: 992px) { 
-    @import './includes/large-devices';
+    @import './responsive/large-devices';
 }
 
 @media screen and (max-width: 768px) {
-    @import './includes/medium-devices';
+    @import './responsive/medium-devices';
 }
 
 @media screen and (max-width: 576px) {
-    @import './includes/small-devices';
+    @import './responsive/small-devices';
+}
+
+@media screen and (max-width: 400px) {
+    @import './responsive/mini-devices';
 }
 

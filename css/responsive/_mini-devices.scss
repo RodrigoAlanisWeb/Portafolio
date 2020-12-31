@@ -1,0 +1,16 @@
+.header{
+    height: 215px;
+    grid-template-rows: 50px 175px;
+    .header__container{
+        height: 165px;
+        .header__center{
+            height: 165px;
+        }
+        .header__right{
+            height: 165px;
+        }
+        .header__left{
+            height: 165px;
+        }
+    }
+}   
